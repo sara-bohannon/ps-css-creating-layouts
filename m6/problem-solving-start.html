@@ -66,22 +66,35 @@
         /* Insert layout code here */
 
         .pies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 10em);
+            gap: 2em;
+            justify-content: space-between;
 
         }
 
         .pie {
+            display: flex;
+            flex-direction: column;
+            gap: .25em;
             
         }
 
         .pie__description {
-            
+            flex-grow: 1;
+
         }
 
         .pie__prices {
+            display: flex;
+            justify-content: space-between;           
             
         }
 
         .price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             
         }
 
